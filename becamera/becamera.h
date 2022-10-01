@@ -25,8 +25,10 @@ typedef enum BeCameraStatusCode
 	ERR_FIND_DEVICE_STREAM_INFO = 6,	  // 查询设备支持的流信息失败
 	ERR_NOT_SUPPORT_VIDEO_STREAM = 7,	  // 设备不支持视频流
 	ERR_OPEN_VIDEO_INPUT_DEVICE = 8,	  // 打开视频输入设备失败
-	ERR_VIDEO_STREAM_ALLOC = 9,			  // 视频流内存空间开辟失败
-	ERR_GET_CAMERA_STREAM = 10,			  // 取流失败
+	ERR_NOT_FOUND_VIDEO_CODEC = 9,		  // 未查询到视频解码器
+	ERR_NOT_OPEN_VIDEO_INPUT_DEVICE = 10, // 视频输入设备未打开
+	ERR_VIDEO_STREAM_ALLOC = 11,		  // 视频流内存空间开辟失败
+	ERR_GET_CAMERA_STREAM = 12,			  // 取流失败
 } BeCameraStatusCode;
 
 // BeCameraHandle BeCamera句柄

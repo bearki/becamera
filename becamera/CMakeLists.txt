@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 # 配置源文件
-SET(LIBBECAMERA_SRC becamera.cpp)
+SET(LIBBECAMERA_SRC becamera.cpp convert.cpp)
 
 # 配置静态库生成参数
 ADD_LIBRARY(becamera_static STATIC ${LIBBECAMERA_SRC})

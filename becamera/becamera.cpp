@@ -3,24 +3,17 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include "becamera/becamera.h"
+#include "becamera.h"
 extern "C"
 {
 #include "libavutil/ffversion.h"
 #include "libavdevice/avdevice.h"
 #include "libavcodec/avcodec.h"
-	// #include "libavfilter/avfilter.h"
-	// #include "libavformat/avformat.h"
-	// #include "libavutil/avutil.h"
-	// #include "libavutil/avstring.h"
-	// #include "libswresample/swresample.h"
-	// #include "libswscale/swscale.h"
-	// #include "libavutil/imgutils.h"
 };
 #define FMT_HEADER_ONLY
 #include "fmt/core.h"
 
-// 定义个平台的视频输入设备类型
+// 定义各平台的视频输入设备类型
 #ifdef LINUX
 #define BECAMERA_INPUT_FORMAT "v4l2"
 #elif defined WINDOWS
